@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Boljoon Cockpit | Fight Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loginOverlay" class="login-overlay">
+  <div class="login-container">
+    <h2>🏆 BOLJOON COCKPIT</h2>
+    <div class="subtitle">Fight Management System</div>
+    <div class="login-input-group"><label>Username</label><input type="text" id="loginUsername" placeholder="Enter username" autocomplete="off"></div>
+    <div class="login-input-group"><label>Password</label><input type="password" id="loginPassword" placeholder="Enter password"></div>
+    <button class="login-btn" id="loginBtn">LOGIN</button>
+    <div id="loginError" class="login-error"></div>
+  </div>
+</div>
+
+<div id="mainContent" class="main-content">
+  <div class="main-nav">
+    <div class="nav-tab active" data-tab="fight-tab">⚔️ REGISTER</div>
+    <div class="nav-tab" data-tab="parada-tab">💰 PARADA</div>
+    <div class="nav-tab" data-tab="schedule-tab">📅 SCHEDULE</div>
+    <div class="nav-tab" data-tab="scoring-tab">🏆 SCORING</div>
+    <div class="nav-tab" data-tab="overall-tab">📊 RESULTS</div>
+    <div class="nav-tab" data-tab="settings-tab">⚙️ SETTINGS</div>
+    <div class="nav-tab" data-tab="history-tab">🖨️ HISTORY</div>
+  </div>
+  <div id="fight-tab" class="tab-content active-tab"><div class="arena-container">Loading...</div></div>
+  <div id="parada-tab" class="tab-content"><div class="arena-container">Loading...</div></div>
+  <div id="schedule-tab" class="tab-content"><div class="arena-container">Loading...</div></div>
+  <div id="scoring-tab" class="tab-content"><div class="arena-container">Loading...</div></div>
+  <div id="overall-tab" class="tab-content"><div class="arena-container">Loading...</div></div>
+  <div id="settings-tab" class="tab-content"><div class="arena-container">Loading...</div></div>
+  <div id="history-tab" class="tab-content"><div class="arena-container">Loading...</div></div>
+  <button class="logout-btn" id="logoutBtn">🚪 LOGOUT</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
